@@ -25,9 +25,9 @@ public void onPause() {
 
 [fragment_pull_to_refresh.xml](https://github.com/iampaul83/Android-pull-to-refresh/blob/master/app/src/main/res/layout/fragment_pull_to_refresh.xml)
 
-這個library有好多header可以用，這邊使用的是**StoreHouseHeader**
+* 這個library有好多header可以用，這邊使用的是**StoreHouseHeader**
 
-注意若是使用**PtrHandler**要實作**checkCanDoRefresh**否則想ListView這種會無法往上滑(會直接觸發refresh)
+* 注意若是使用**PtrHandler**要實作**checkCanDoRefresh**否則想ListView這種會無法往上滑(會直接觸發refresh)
 ```java
 ptrFrameLayout.setPtrHandler(new PtrHandler() {
   @Override
@@ -42,7 +42,7 @@ ptrFrameLayout.setPtrHandler(new PtrHandler() {
    }
 });
 ```
-而使用**PtrDefaultHandler**會自動**checkCanDoRefresh**，在**ListView**和**GridView**上測試狀況良好
+* 而使用**PtrDefaultHandler**會自動**checkCanDoRefresh**，在**ListView**和**GridView**上測試狀況良好
 ```java
 ptrFrameLayout.setPtrHandler(new PtrDefaultHandler() {
   @Override
