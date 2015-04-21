@@ -1,4 +1,3 @@
-# Android-pull-to-refresh
 # 怎麼把這專案匯入Android Studio
 * 要選**Import Project...**
 
